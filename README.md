@@ -37,7 +37,7 @@ Adding events must be done in the `Start()` method of a `MonoBehaviour`.
 This is done by calling `UnityBCI2000.addEvent("{{ Your event name }}");`.
 
 Events are called via the `UnityBCI2000.callEvent(string, int)` method, with the name of the event and a value to log to BCI2000.
-In both of these cases `UnityBCI2000 will be replace with the name of a local reference to a UnityBCI2000 object, which should be initialized by calling `GameObject.find("{{ The name of the GameObject containing UnityBCI2000 }}").getComponent<UnityBCI2000>();` in the `Start()` method of `MonoBehaviour`.
+In both of these cases `UnityBCI2000` will be replaced with the name of a local reference to a UnityBCI2000 object, which should be initialized by calling `GameObject.find("{{ The name of the GameObject containing UnityBCI2000 }}").getComponent<UnityBCI2000>();` in the `Start()` method of `MonoBehaviour`.
 
 #### Example:
 ```
